@@ -1,3 +1,6 @@
+const button = getElementById('petButton');
+const imgs = document.getElementsByTagName("img");
+
 const petimgs = [
     "https://in1li1tgpn-flywheel.netdna-ssl.com/wp-content/uploads/2011/05/tuna-the-chiweenie-derpy-dog-overbite-cute.jpg", 
     "https://mojly.com/wp-content/uploads/2018/02/animals-goofy-dog-pics-photo-gallery-cute-09-derpy-dogs.jpg",
@@ -16,13 +19,22 @@ const petimgs = [
   ]
 
 
-const imgs = document.getElementsByTagName("img");
-
 function random(){
     return Math.floor(Math.random() * (petimgs.length - 1));
   }
 
-for (let i = 0; i < imgs.length; i++){
-    imgs[i].src = `${petimgs[random()]}`;
-    imgs[i].style.height = '200px';
-}
+  // button.addEventListener('click', function() {
+    
+  function randomizeDogs(){
+    for (let i = 0; i < imgs.length; i++){
+      imgs[i].src = `${petimgs[random()]}`;
+      imgs[i].style.height = '200px';
+    }
+  }
+  randomizeDogs();
+
+
+// for (let i = 0; i < imgs.length; i++){
+//     imgs[i].src = `${petimgs[random()]}`;
+//     imgs[i].style.height = '200px';
+// }

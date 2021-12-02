@@ -1,13 +1,17 @@
 {
-    "name": "PetRandomizerImg",
-    "version": "1.0.0",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["background.js"]
-        }
-    ]
-
-
+  "name": "PetRandomizerImg",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["background.js"]
+      }
+  ],
+  "icons": {
+  	"16": "/images/cute-cartoon-dog-face3.png",
+  	"48": "/images/cute-cartoon-dog-face2.png",
+  	"128": "/images/cute-cartoon-dog-face.png"
+  }
+ 
 }
